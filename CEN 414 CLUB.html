@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+<head>
+    <script src="jquery-3.7.1.slim.js" type="text/javascript">
+	</script>
+  </head>
+<body>
+<div id="clickme" style="width:400px; height:400px; background-color: red;"></div>
+	<button id="hello">click me</button>
+	<script>
+	const browser =$(window)
+browser.ready(function(){
+	$("#hello").click(function)(){
+	$("#clickme").css("background","red")
+	})
+	$("#clickme").toggle('4000')
+	})
+	</script>
+<style>
+body {
+  background-image: url('literary.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.background{
+background-color: center;
+width: 50%;
+text-align:center;
+background-color: rgba(255,255,255,0.8);
+border-radius: 20px;
+}
+.p1 {
+  font-family: "Lucida Handwriting";
+}
+
+</style>
+<div class="background">
+<h1   style="color:#ff0000;" class="p1">Literary and Debate club student bio-data</h1>
+<img src="pic2.jpg" alt="Student Image" style="width:200px;height:200px;">
+<form action="/action_page.php" target="_blank" method="post">
+<fieldset >
+<legend Style= "color:Tomato;">PERSONAL/CONTACT INFORMATION </legend>
+  <label style="color:rgb(0, 0, 255);"for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label style="color:rgb(0, 0, 255);"  for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br>
+  <label style="color:rgb(0, 0, 255);"for="matno">Matric Number:</label>
+  <input type="text" id="matno" name="matno"><br>
+  <label style="color:rgb(0, 0, 255);" for="email">Student email:</label>
+  <input type="email" id="email" name="email"><br>
+  <label  style="color:rgb(0, 0, 255);" for="hall">Hall of Residence:</label>
+<select  id="hall" name="hall">
+  <option value="dorcas">Dorcas</option>
+  <option value="deborah">Deborah</option>
+  <option value="mary">Mary</option>
+  <option value="lydia">Lydia</option>
+  <option value="esther">Esther</option>
+  <option value="paul">Paul</option>
+  <option value="peter">peter</option>
+  <option value="john">John</option>
+  <option value="joseph">Joseph</option>
+  <option value="daniel">Daniel</option>
+</select><br>
+  <label style="color:rgb(0, 0, 255);" for="room">ROOM NO:</label>
+  <input type="text" id="room" name="room"><br>
+  <input Style= "color:Violet;" type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<form action="/action_page.php" target="_blank" method="post">
+<fieldset>
+<legend Style= "color:Tomato;">GENDER</legend>
+  <input type="radio" id="male" name="sex" value="MALE">
+  <label style="color:rgb(0, 0, 255);" for="male">MALE</label><br>
+  <input type="radio" id="female" name="sex" value="FEMALE">
+  <label style="color:rgb(0, 0, 255);"for="female">FEMALE</label><br>
+   <input Style= "color:Violet;" type="submit" value="Submit">
+   </fieldset>
+</form>
+<form action="/action_page.php" target="_blank" method="post">
+<fieldset>
+<legend Style= "color:Tomato;">DATE OF BIRTH</legend>
+  <label style="color:rgb(0, 0, 255);" for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input Style= "color:Violet;" type="submit" value="Submit">
+   </fieldset>
+   <fieldset>
+<legend Style= "color:Tomato;">SUB-UNIT</legend>
+<P>What sub-unit would you like to join?</p>
+  <select  id="subunit" name="subunit">
+  <option value="spelling">spelling</option>
+  <option value="public-speaking">public-speaking</option>
+  <option value="Debate">Debate</option>
+  <option value="poem writing">poem writing</option>
+</select><br>
+   </fieldset>
+</form>
+</div>
+</body>
+</html>

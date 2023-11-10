@@ -1,0 +1,1 @@
+insert into "CEN434".STUDENT_INFO (MATNO, NAME, PROGRAMME, ROOMNO, AGE)  values ('20CJ056452','Ajayi Davies','ICE', 'C404', '18')

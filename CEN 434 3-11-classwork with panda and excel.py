@@ -10,5 +10,5 @@ print(df)
 
 a = df.to_numpy()
 reshaped_a = a.reshape(3, 5)  # Reshape and assign it to a new variable
-#if you reshape it into (2,5) you'll get an erro saying:ValueError: cannot reshape array of size 15 into shape (2,5) becauseoccurs because the total number of elements in your array, which is 15, doesn't match the number of elements needed for a shape of (2, 5), which requires 10 elements.so you either change the number if element in array or change the reshape size to accomodat 15 elements i.e(3,5)
+#if you reshape it into (2,5) you'll get an error saying: "ValueError: cannot reshape array of size 15 into shape (2,5)" this is because the total number of elements in your array, which is 15, doesn't match the number of elements needed for a shape of (2, 5), which requires 10 elements.so you either change the number if element in array or change the reshape size to accomodat 15 elements i.e(3,5)
 print(reshaped_a)
